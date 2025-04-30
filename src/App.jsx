@@ -87,7 +87,8 @@ const App = () => {
 
   return (
     <main>
-      <div className='pattern' />
+      <div className='pattern'/>
+      <img src="./hero-bg.png" alt='background' className='bg'></img>
       <div className='wrapper'>
         <header>
           <img src="./hero.png" alt='hero_banner'></img>
