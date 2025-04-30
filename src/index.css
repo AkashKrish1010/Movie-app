@@ -105,6 +105,9 @@
   .movie-card {
     @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10 ;
 
+    &:hover{
+      @apply scale-105 shadow-light-200/10; /* Scale up on hover */
+    }
     & img {
       @apply rounded-lg h-auto w-full;
     }
