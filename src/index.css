@@ -18,7 +18,6 @@
   --breakpoint-xs: 480px;
 
   --background-image-hero-pattern: url("/Movie-app/hero-bg.png");
-  
 }
 
 @layer base {
@@ -26,6 +25,7 @@
     font-family: "DM Sans", serif;
     font-optical-sizing: auto;
     background: #030014;
+    overflow-x: hidden; /* ✅ hide horizontal scroll */
   }
 
   h1 {
@@ -37,7 +37,7 @@
   }
 
   main {
-    @apply min-h-screen relative bg-primary;
+    @apply min-h-screen relative bg-primary overflow-x-hidden; /* ✅ important */
   }
 
   header {
@@ -51,18 +51,18 @@
 
 @layer components {
   .pattern {
-    @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
+    @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0 overflow-hidden; /* ✅ */
   }
 
   .wrapper {
-    @apply px-5 py-12 xs:p-10 max-w-7xl mx-auto flex flex-col relative z-10;
+    @apply px-5 py-12 xs:p-10 max-w-7xl mx-auto flex flex-col relative z-10 overflow-x-hidden; /* ✅ */
   }
 
   .trending {
     @apply mt-20;
 
     & ul {
-      @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
+      @apply flex flex-row overflow-x-auto gap-5 -mt-10 w-full hide-scrollbar; /* fixed to x-auto */
     }
 
     & ul li {
@@ -104,7 +104,6 @@
 
   .movie-card {
     @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10 ;
-
 
     & img {
       @apply rounded-lg h-auto w-full;

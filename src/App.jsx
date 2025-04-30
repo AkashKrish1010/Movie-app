@@ -88,10 +88,10 @@ const App = () => {
   return (
     <main>
       <div className='pattern'/>
-      <img src="./hero-bg.png" alt='background' className='bg'></img>
+      <img src="/hero-bg.png" alt='background' className='bg'></img>
       <div className='wrapper'>
         <header>
-          <img src="./hero.png" alt='hero_banner'></img>
+          <img src="/Movie-app/hero.png" alt='hero_banner'></img>
           <h1>Find <span className='text-gradient'>Movies</span> You'll enjoy without the Hassle</h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
