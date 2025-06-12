@@ -1,12 +1,44 @@
-# React + Vite
+Discover movies, search effortlessly, and see what’s trending—powered by TMDb & Appwrite.
+🎬 What This Repo Does
+This project allows users to:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Search for Movies using the [TMDB (The Movie Database) API].
 
-Currently, two official plugins are available:
+View Trending Movies based on search frequency, stored in a backend powered by Appwrite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View Movie Cards displaying posters, ratings, and basic details.
 
-## Expanding the ESLint configuration
+Experience a modern, responsive UI with TailwindCSS and custom utility classes.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Deploy the app to GitHub Pages using gh-pages.
+
+🛠️ Core Tech Stack
+Frontend: React, Vite, Tailwind CSS
+
+State Management: React Hooks
+
+Debounce: @react-hook/debounce to reduce API calls on typing
+
+Backend Services: Appwrite for storing trending searches
+
+API Integration: TMDB API to fetch movie data
+
+Deployment: GitHub Pages via gh-pages script
+
+📂 Folder Structure Highlights
+/src/components/: Contains reusable UI components like MovieCard and Search.
+
+/src/appwrite.js: Logic for interacting with Appwrite (e.g., logging searches, fetching trending).
+
+/src/App.jsx: Main logic for searching and displaying movies.
+
+/index.css: Tailwind + custom styles and utilities.
+
+⚙️ Key Features
+🔍 Live Movie Search with debouncing
+
+📈 Trending Section powered by Appwrite, showing most searched movies
+
+💅 Clean UI with a hero section, styled movie cards, and smooth layout
+
+🚀 Production-Ready Build System using Vite for fast dev and optimized build
