@@ -15,6 +15,10 @@ A fast and modern movie search app built with **React + Vite**, powered by **TMD
 - Appwrite
 - TMDb API
 
+## 🔗 Live Demo  
+👉 [akashkrish1010.github.io/Movie-app](https://akashkrish1010.github.io/Movie-app/)
+
+
 ## 📦 Setup
 ```bash
 npm install
